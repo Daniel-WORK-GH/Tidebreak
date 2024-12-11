@@ -48,7 +48,6 @@ public class VehicleController : MonoBehaviour
 
         transform.position += movement * transform.up;//Apply movement
 
-      
         if (driving)
         {
             float rotation = 0f;
@@ -82,7 +81,7 @@ public class VehicleController : MonoBehaviour
                 {
                     GameObject obj = Instantiate(bulletPrefab, cannons[i].transform.position, cannons[i].transform.rotation);
                     Bullet bullet = obj.GetComponent<Bullet>();
-                    bullet.ownerPlayer = gameObject;;
+                    bullet.ownerPlayer = gameObject;
                 }
 
                 elpshoot = 0;
