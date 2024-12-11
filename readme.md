@@ -31,10 +31,10 @@ The game will end end when all the treasures are collected.
 | Move Right | D |
 | Move Down | S |
 | Interact | E |
-| Open Map | M |
-| Open Inventory | I |
-| Fire | Mouse Left |
-| Aim | Mouse |
+| Open Map (Not added yet) | M | 
+| Open Inventory (Not added yet) | I |
+| Fire | Mouse Left / Mouse Right |
+| Aim (Not added yet) | Mouse |
 ### Rules
 ___
 The rule is don' die. The ship has an health bar and so does the player, if one of the reaches 0 hp the player losses and respawns.
