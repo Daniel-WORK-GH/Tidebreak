@@ -45,12 +45,11 @@ public class VehicleController : MonoBehaviour
             movement = -moveSpeed * Time.deltaTime;
             driving = true;
         }
-        
-        // Apply movement
-        transform.position += movement * transform.up;
 
-        // Apply rotation
-        if(driving)
+        transform.position += movement * transform.up;//Apply movement
+
+      
+        if(driving)//Apply rotation
         {
             float rotation = 0f;
             if (Input.GetKey(KeyCode.A))
@@ -62,23 +61,22 @@ public class VehicleController : MonoBehaviour
                 rotation = -rotationSpeed * Time.deltaTime;
             }
 
-            // Apply rotation
-            transform.Rotate(0, 0, rotation);
+            transform.Rotate(0, 0, rotation);// Apply rotation
         }
 
         if (elpshoot > shoottime)
         {
-            if(Input.GetMouseButton(0)) // left click
+            if(Input.GetMouseButton(0))// left click
             {
                 for(int i = 0; i < 4; i++)
                 {
                     GameObject obj = Instantiate(bulletPrefab, cannons[i].transform.position, cannons[i].transform.rotation);
                     Bullet bullet = obj.GetComponent<Bullet>();
-                    bullet.ownerPlayer = gameObject;;
+                    bullet.ownerPlayer = gameObject;
                 }
                 elpshoot = 0;
             }        
-            if(Input.GetMouseButton(1)) // right click
+            if(Input.GetMouseButton(1))// right click
             {
                 for(int i = 4; i < 8; i++)
                 {
