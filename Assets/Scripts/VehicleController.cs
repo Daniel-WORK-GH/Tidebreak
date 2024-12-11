@@ -49,7 +49,7 @@ public class VehicleController : MonoBehaviour
         transform.position += movement * transform.up;//Apply movement
 
       
-        if(driving)//Apply rotation
+        if (driving)
         {
             float rotation = 0f;
             if (Input.GetKey(KeyCode.A))
@@ -66,19 +66,19 @@ public class VehicleController : MonoBehaviour
 
         if (elpshoot > shoottime)
         {
-            if(Input.GetMouseButton(0))// left click
+            if (Input.GetMouseButton(0))
             {
-                for(int i = 0; i < 4; i++)
+                for (int i = 0; i < 4; i++)
                 {
                     GameObject obj = Instantiate(bulletPrefab, cannons[i].transform.position, cannons[i].transform.rotation);
                     Bullet bullet = obj.GetComponent<Bullet>();
                     bullet.ownerPlayer = gameObject;
                 }
                 elpshoot = 0;
-            }        
-            if(Input.GetMouseButton(1))// right click
+            }
+            if (Input.GetMouseButton(1))
             {
-                for(int i = 4; i < 8; i++)
+                for (int i = 4; i < 8; i++)
                 {
                     GameObject obj = Instantiate(bulletPrefab, cannons[i].transform.position, cannons[i].transform.rotation);
                     Bullet bullet = obj.GetComponent<Bullet>();

@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
             if (Vector3.Distance(transform.position, vehicle.transform.position) <= interactionRange)
             {
                 currentVehicle = vehicle;
-                break;  
+                break;
             }
         }
     }
