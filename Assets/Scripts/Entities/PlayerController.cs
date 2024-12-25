@@ -79,13 +79,15 @@ public class PlayerController : MonoBehaviour
     void ExitVehicle()
     {
         isInVehicle = false;
-        transform.position = currentVehicle.transform.position + new Vector3(1f, 0f, 0f); // Offset exit position
+        transform.position = currentVehicle.transform.position;
         currentVehicle.ReleaseControl();
 
         // Detach the camera
         mainCamera.transform.SetParent(transform);
         mainCamera.transform.localRotation = Quaternion.identity; // Ensure rotation is reset
         mainCamera.orthographicSize = zoomedInSize;
+
+        transform.position += new Vector3(5, 0, 0); // Offset exit position
 
         spriteRenderer.enabled = true; // Show the player
     }

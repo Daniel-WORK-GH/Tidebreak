@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        transform.position += transform.up * speed * Time.deltaTime;
+        transform.position += -transform.right * speed * Time.deltaTime;
     }
 
     void OnCollisionEnter2D(Collision2D collision)

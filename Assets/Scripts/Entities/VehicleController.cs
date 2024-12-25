@@ -60,7 +60,7 @@ public class VehicleController : MonoBehaviour
                 rotation = -rotationSpeed * Time.deltaTime;
             }
 
-            transform.Rotate(0, 0, rotation);// Apply rotation
+            transform.Rotate(0, 0, movement < 0 ? -rotation : rotation);// Apply rotation
         }
 
         if (elpshoot > shoottime)
