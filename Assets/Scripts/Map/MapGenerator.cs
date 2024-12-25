@@ -17,8 +17,8 @@ public class MapGenerator : MonoBehaviour
     public float sandThreshold = 0.3f;
     public float grassThreshold = 0.3f;
 
-    public float scale = 10f;               
-    public Vector2 offset;               
+    public float scale = 10f;
+    public Vector2 offset;
 
     void Start()
     {
