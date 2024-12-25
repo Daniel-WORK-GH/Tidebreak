@@ -905,13 +905,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c18155fc402594ca8a6cf1a3a08180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
-  wallTile: {fileID: 0}
-  floorTile: {fileID: 0}
-  randomFillPercent: 0.5
-  gridSize: 100
-  simulationSteps: 20
-  pauseTime: 1
 --- !u!483693784 &203920700
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -1688,6 +1681,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1813,6 +1807,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2021286499}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86aa1f6a78fa86a47b7583a64dd59acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420031}
 --- !u!1 &527257673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4359,11 +4366,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1440403072}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -394.80002, y: 300.79996}
-  m_SizeDelta: {x: 463.2, y: 125.2}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 242.14014, y: -75.20001}
+  m_SizeDelta: {x: 463.19995, y: 125.20001}
+  m_Pivot: {x: 0.48259953, y: 0.5}
 --- !u!114 &1462637199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4500,10 +4507,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1440403072}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -404.1001, y: 319.59998}
-  m_SizeDelta: {x: -808.2, y: -639.2}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 240.8999, y: -56.400024}
+  m_SizeDelta: {x: 481.8, y: 112.79999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476600941
 MonoBehaviour:
