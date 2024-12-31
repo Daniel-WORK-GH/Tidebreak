@@ -84,3 +84,7 @@ This game also has a nice artstyle and seems to have fun gameplay. But many peop
 ## [Republic Pirates](https://store.epicgames.com/en-US/p/republic-of-pirates-b6dfa6)
 ![alt text](image-2.png)
 This game seems to be a top down stratagy game, many people dislike games that give control of many units. My game has one unit that the player can control, making it more accessible to wider audience.
+
+
+## Current Project State
+![alt text](uml.png)
